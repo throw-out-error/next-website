@@ -1,30 +1,24 @@
 import Head from 'next/head'
+import React from 'react'
 
-export default function Home() {
-	return (
-		<div className="container">
-			<Head>
-				<title>throw out Error()</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
+import Router from 'next/router'
 
-			<header>
-				<h1 className="title">
-					<a href="/">throw out Error()</a>
-				</h1>
-			</header>
+export default class Home extends React.Component {
+	componentDidMount() {
+		setTimeout(() => Router.push('/home'), 5000)
+	}
+	render() {
+		return (
+			<div className="container">
+				<Head>
+					<title>throw out Error()</title>
+					<link rel="icon" href="/favicon.ico" />
+				</Head>
 
-			<main>
-				<h2>Welcome to our website.</h2>
-			</main>
-
-			<footer>
-				Designed By <a href="https://theoparis.com/about" target="_blank" rel="noopener noreferrer">
-					Theo Paris
-				</a> & Powered By
-				<a href="https://nextjs.org" target="_blank" rel="noopener noreferrer"> Next.js
-				</a>.
-			</footer>
-		</div>
-	)
+				<main>
+					<h2 className="error">An error has occurred. Please wait to be redirected...</h2>
+				</main>
+			</div>
+		)
+	}
 }

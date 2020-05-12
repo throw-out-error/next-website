@@ -3,24 +3,44 @@ html, body {
     padding: 0;
 }
 
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../fonts/FiraCode-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face{
+    font-family: 'Fira Code';
+    src: url('../fonts/FiraCode-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     background-color: #30323D;
-    color: white;
+    color: #1bd844;
+    font-family: "Fira Code";
 }
 
 header {
     position: relative;
     top: 0;
-    background-color: #5162b8;
+    background-color: #006464;
     width: 100%;
     height: 100px;
     margin-bottom: 15px;
     padding: 15px 0 0 25px;
 }
 
-.title {
-    font-weight: bold;
+.error {
+    color: red;
+}
 
+.title {
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 main {
@@ -29,15 +49,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 a {
-    color: #E8C547;
+    color: #ff841f;
     text-decoration: none;
 }
 
 a:hover {
-    color: #CDD1C4;
+    color: rgb(255, 255, 255)
 }
 
 footer {
@@ -46,6 +67,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 50px;
-    background-color: #5162b8;
+    background-color: #006464;
     padding: 25px 0 0 15px;
+    text-shadow: 2px 2px 1px rgb(0, 0, 0);
 }
