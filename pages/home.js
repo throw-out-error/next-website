@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Home() {
 	return (
-		<div className="container">
+		<div>
 			<Head>
 				<title>throw out Error()</title>
 				<link rel="icon" href="/favicon.ico" />
