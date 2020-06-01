@@ -1,12 +1,12 @@
 import React from "react";
-import { Container } from 'react-bootstrap';
+import { Container } from "react-bootstrap";
 
 export function About() {
     return (
         <div>
             <Container className="main">
                 <p>
-                    Throw Out Error is a team made up of teenage programmers{" "}
+                    Throw Out Error is a team made up of programmers{" "}
                     <a
                         href="https://theoparis.com/about"
                         target="_blank"
@@ -29,7 +29,8 @@ export function About() {
                         rel="noopener noreferrer"
                     >
                         Sebastian Speitel
-                    </a>.
+                    </a>
+                    .
                 </p>
             </Container>
         </div>

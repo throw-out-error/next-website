@@ -5,7 +5,8 @@ export function Projects() {
     return (
         <div>
             <Container className="main">
-                <h2>WORK IN PROGRESS</h2>
+                <h2>COMING SOON</h2>
+                <p>This page is work in progress.</p>
             </Container>
         </div>
     );
