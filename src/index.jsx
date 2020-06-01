@@ -13,18 +13,17 @@ import { Header } from "./components/Header.jsx";
 import { Footer } from "./components/Footer.jsx";
 import { About } from "./about.jsx";
 import { Projects } from "./projects.jsx";
+import { Container } from "react-bootstrap";
 
 export default function App() {
     const router = useHistory();
     setTimeout(() => router.push("/home"), 5000);
     return (
-        <div className="container">
-            <main>
-                <h2 className="error">
-                    Syntax error on 69:420. Please wait to be redirected...
-                </h2>
-            </main>
-        </div>
+        <Container className="main">
+            <h2 className="error">
+                Syntax error on 69:420. Please wait to be redirected...
+            </h2>
+        </Container>
     );
 }
 
