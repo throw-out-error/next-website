@@ -11,6 +11,8 @@ import { Home } from "./home.jsx";
 import "./styles/index.scss";
 import { Header } from "./components/Header.jsx";
 import { Footer } from "./components/Footer.jsx";
+import { About } from "./about.jsx";
+import { Projects } from "./projects.jsx";
 
 export default function App() {
     const router = useHistory();
@@ -32,8 +34,8 @@ ReactDOM.render(
             <meta charSet="utf-8" />
             <meta
                 name="viewport"
-                content="width=device-width, initial-scale=1"
-            ></meta>
+                content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover"
+            />
             <title>throw out Error()</title>
             <meta property="og:title" content="throw out Error()" />
             <meta property="og:type" content="website" />
@@ -42,16 +44,25 @@ ReactDOM.render(
                 property="og:image"
                 content="https://throw-out-error.dev/logo.jpg"
             />
-            <meta property="og:description" content="Syntax error on line 69:420" />
+            <meta
+                property="og:description"
+                content="Syntax error on line 69:420"
+            />
             <link rel="icon" href="/favicon.ico" />
         </Helmet>
         <Header />
         <Switch>
             <Route path="/" exact>
-                <App></App>
+                <App />
             </Route>
             <Route path="/home" exact>
-                <Home></Home>
+                <Home />
+            </Route>
+            <Route path="/about" exact>
+                <About />
+            </Route>
+            <Route path="/projects" exact>
+                <Projects />
             </Route>
         </Switch>
         <Footer />
