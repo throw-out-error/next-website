@@ -30,10 +30,22 @@ ReactDOM.render(
     <Router>
         <Helmet>
             <meta charSet="utf-8" />
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1"
+            ></meta>
             <title>throw out Error()</title>
+            <meta property="og:title" content="throw out Error()" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://throw-out-error.dev" />
+            <meta
+                property="og:image"
+                content="https://throw-out-error.dev/logo.jpg"
+            />
+            <meta property="og:description" content="Syntax error on line 69:420" />
             <link rel="icon" href="/favicon.ico" />
         </Helmet>
-        <Header/>
+        <Header />
         <Switch>
             <Route path="/" exact>
                 <App></App>
@@ -42,7 +54,7 @@ ReactDOM.render(
                 <Home></Home>
             </Route>
         </Switch>
-        <Footer/>
+        <Footer />
     </Router>,
     document.getElementById("root")
 );
