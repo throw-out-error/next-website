@@ -3,10 +3,9 @@
     "version": "1.0.0",
     "scripts": {
         "debug": "NODE_OPTIONS='--inspect' next",
-        "build": "next build",
+        "build": "next build && tsc --project tsconfig.server.json",
         "dev": "nodemon",
-        "server": "tsc --project tsconfig.server.json",
-        "start": "cross-env NODE_ENV=production npm run server"
+        "start": "cross-env NODE_ENV=production node dist/index.js"
     },
     "dependencies": {
         "@mdx-js/loader": "^1.6.16",
