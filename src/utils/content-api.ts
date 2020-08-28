@@ -26,12 +26,12 @@ export type CollectionData<T> = {
 export class ContentApi {
     token: string;
     apiUrl: string;
-    protected collections: Collection<unknown>[];
+    protected collections: Record<string, Collection<unknown>>;
 
     constructor(apiToken: string, apiBaseUrl: string) {
         this.token = apiToken;
         this.apiUrl = apiBaseUrl + "/api";
-        this.collections = [];
+        this.collections = {};
     }
 
     /**
@@ -41,7 +41,7 @@ export class ContentApi {
     col<T>(name: string): Collection<T> {
         if (!this.collections[name])
             this.collections[name] = new Collection(this, name);
-        return this.collections[name];
+        return this.collections[name] as Collection<T>;
     }
 }
 
