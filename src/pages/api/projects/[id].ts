@@ -19,3 +19,5 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         res.status(500).json({ statusCode: 500, message: err.message });
     }
 };
+
+export default handler;

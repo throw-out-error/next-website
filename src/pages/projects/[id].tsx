@@ -1,10 +1,11 @@
-import { GetStaticPaths, GetServerSideProps } from "next";
+import { GetServerSideProps } from "next";
 
 import { Project } from "../../typings";
-import { ContentType, projects, transformProject } from "../../utils/data";
+import { ContentType, transformProject } from "../../utils/data";
+import { api } from "../../utils/content-api";
+import React from "react";
 import Layout from "../../components/Layout";
 import ListDetail from "../../components/ListDetail";
-import { api } from "../../utils/content-api";
 
 type Props = {
     item?: Project;
