@@ -4,15 +4,30 @@ const AboutPage = () => (
     <Layout title="throw out Error(about)">
         <h2>About</h2>
         <p>
-            Throw Out Error is a team made up of programmers{" "}
+            <a
+                href="https://github.com/throw-out-error"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Throw Out Error
+            </a>{" "}
+            is a team made up of programmers{" "}
             <a
                 href="https://theoparis.com/about"
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 Theo Paris
-            </a>{" "}
-            and{" "}
+            </a>
+            ,{" "}
+            <a
+                href="https://onyxcode.space/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Dan (onyxcode)
+            </a>
+            , and{" "}
             <a
                 href="https://github.com/Brent-Trenholme"
                 target="_blank"

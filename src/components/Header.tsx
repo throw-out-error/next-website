@@ -7,7 +7,7 @@ export const Header = () => (
             <a className="logo-wrapper">
                 <img
                     className="logo"
-                    src="/images/logo-transparent.png"
+                    src="/images/logo-transparent.svg"
                     alt="throw out error()"
                 ></img>
             </a>

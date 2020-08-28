@@ -9,6 +9,7 @@ type ListDetailProps = {
 const ListDetail = ({ item: user }: ListDetailProps) => (
     <div>
         <h3>{user.name}</h3>
+        <p>{user.description}</p>
         {user.source ? <a href={user.source}>Source Code</a> : <div />}
     </div>
 );
