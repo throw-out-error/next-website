@@ -2,10 +2,11 @@
     "name": "@throw-out-error/site",
     "version": "1.0.0",
     "scripts": {
-        "dev": "next dev",
         "debug": "NODE_OPTIONS='--inspect' next",
         "build": "next build",
-        "start": "next start",
+        "dev": "npm run build && npm run server",
+        "server": "node dist/server.js",
+        "start": "NODE_ENV=production npm run server",
         "deploy": "npm run build",
         "type-check": "tsc"
     },
