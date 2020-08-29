@@ -1,6 +1,8 @@
 dependencies:
   '@mdx-js/loader': 1.6.16_react@16.13.1
   '@next/mdx': 9.5.2_@mdx-js+loader@1.6.16
+  '@throw-out-error/store-cockpit-cms': 1.0.0
+  '@throw-out-error/storez': 1.0.0
   '@types/jquery': 3.5.1
   '@types/json-schema': 7.0.5
   '@types/node': 14.0.27
@@ -20,6 +22,7 @@ dependencies:
   react-dnd-html5-backend: 11.1.3
   react-dom: 16.13.1_react@16.13.1
   safe-filter: 1.0.4
+  typescript: 3.9.7
 devDependencies:
   '@typescript-eslint/eslint-plugin': 3.9.0_cb1f83d1183346f5634726263fc93e43
   '@typescript-eslint/parser': 3.9.0_eslint@6.8.0+typescript@3.9.7
@@ -30,7 +33,6 @@ devDependencies:
   nodemon: 2.0.4
   prettier: 2.0.5
   ts-node: 9.0.0_typescript@3.9.7
-  typescript: 3.9.7
 lockfileVersion: 5.1
 packages:
   /@ampproject/toolbox-core/2.6.0:
@@ -1304,6 +1306,21 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
+  /@throw-out-error/store-cockpit-cms/1.0.0:
+    dependencies:
+      '@throw-out-error/storez': 1.0.0
+      axios: 0.20.0
+    dev: false
+    resolution:
+      integrity: sha512-eLO4rZ44wjEFnqk89LBJfOMAtIc0To06zSR5zTfArzk2nmRQKZYKXlYCvB2SI7x9bNZVrB89qIWla65rTadqag==
+  /@throw-out-error/storez/1.0.0:
+    dependencies:
+      json-buffer: 3.0.1
+      safe-filter: 1.0.4
+      typescript: 4.0.2
+    dev: false
+    resolution:
+      integrity: sha512-j0ex2JS3p+EBFmLgi1ZJXr7BN/xkWVc0EP7NgPFTpLSZMAnd6ZpC+0ry3D2DRq5jk+TIRngQXcfxbv+g7SKjrQ==
   /@types/classnames/2.2.10:
     dev: false
     resolution:
@@ -4825,6 +4842,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Wx85evx11ne96Lz8Dkfh+aPZqJg=
+  /json-buffer/3.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==
   /json-parse-better-errors/1.0.2:
     dev: false
     resolution:
@@ -8211,12 +8232,19 @@ packages:
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
   /typescript/3.9.7:
-    dev: true
+    dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
       integrity: sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+  /typescript/4.0.2:
+    dev: false
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
   /uc.micro/1.0.6:
     dev: true
     resolution:
@@ -8769,6 +8797,8 @@ packages:
 specifiers:
   '@mdx-js/loader': ^1.6.16
   '@next/mdx': ^9.5.2
+  '@throw-out-error/store-cockpit-cms': ^1.0.0
+  '@throw-out-error/storez': ^1.0.0
   '@types/jquery': ^3.5.1
   '@types/json-schema': ^7.0.5
   '@types/node': ^14.0.27
