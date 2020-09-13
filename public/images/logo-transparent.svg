@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 970 550">
+    <defs>
+        <style>.cls-1,.cls-2,.cls-3{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{clip-path:url(#clip-path-2);}.cls-4{clip-path:url(#clip-path-3);}.cls-5{clip-path:url(#clip-path-4);}.cls-6,.cls-7{isolation:isolate;fill:#d50c2d;font-family:ArialMT, Arial;}.cls-6,.cls-7,.cls-8,.cls-9{font-size:500px;}.cls-6{letter-spacing:-0.02em;}.cls-8,.cls-9{font-family:FiraCode-Regular, Fira Code;}.cls-11,.cls-9{fill:#fc4242;}.cls-10{fill:#d1d1d1;}</style>
+        <clipPath id="clip-path">
+            <polygon class="cls-1" points="44 -151.95 323 -151.95 313 528.96 34 528.96 44 -151.95" />
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path class="cls-2" d="M777.75,323.81" />
+        </clipPath>
+        <clipPath id="clip-path-3" transform="translate(-26.49 50.15)">
+            <polyline class="cls-1" points="990 -311.5 990 688.5 -10 688.5 -10 -311.5" />
+        </clipPath>
+        <clipPath id="clip-path-4" transform="translate(-26.49 50.15)">
+            <path class="cls-3" d="M947,525.41" />
+        </clipPath>
+    </defs>
+    <title>TOE</title>
+    <g class="cls-4">
+        <g class="cls-5">
+            <text class="cls-6" transform="translate(7.51 432.62)">T</text>
+            <text class="cls-7" transform="translate(639.51 429.08)">E</text>
+        </g>
+    </g>
+    <text class="cls-8" transform="translate(0 442.39)">T</text>
+    <text class="cls-9" transform="translate(0 442.39)">T</text>
+    <text class="cls-8" transform="translate(646.5 442.39)">E</text>
+    <text class="cls-9" transform="translate(646.5 442.39)">E</text>
+    <path class="cls-10" d="M433.24,135.18,353.42,215l79.82,79.8a22.86,22.86,0,1,1-32.33,32.33l-96-96a22.84,22.84,0,0,1,0-32.32l96-96a22.86,22.86,0,1,1,32.33,32.33ZM692,198.84l-96-96a22.86,22.86,0,0,0-32.33,32.33L643.51,215l-79.81,79.81A22.86,22.86,0,1,0,596,327.14l96-96a22.85,22.85,0,0,0,0-32.33Z" transform="translate(-26.49 50.15)" />
+    <path class="cls-11" d="M538.43,58.55A22.84,22.84,0,0,0,510.6,75L442,343.63A22.87,22.87,0,1,0,486.32,355L554.91,86.36A22.85,22.85,0,0,0,538.43,58.55Z" transform="translate(-26.49 50.15)" />
+</svg>
