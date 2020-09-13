@@ -11,6 +11,7 @@
         "@mdx-js/loader": "^1.6.16",
         "@next/mdx": "^9.5.2",
         "@throw-out-error/store-cockpit-cms": "^1.0.2",
+        "@throw-out-error/storez": "^1.0.2",
         "@types/jquery": "^3.5.1",
         "@types/json-schema": "^7.0.5",
         "@types/node": "^14.0.27",
