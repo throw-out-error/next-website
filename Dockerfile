@@ -1,7 +1,6 @@
 FROM node:alpine
 
-# Install pnpm
-RUN npm i -g pnpm
+RUN apk add --no-cache bash
 
 # Setting working directory. All the path will be relative to WORKDIR
 WORKDIR /usr/src/app
@@ -13,4 +12,4 @@ COPY package*.json ./
 COPY . .
 
 # Building and running the app
-CMD [ "/bin/ash", "entrypoint.sh" ]
+CMD [ "/bin/bash", "yarn install && yarn run build && yarn run start" ]
